@@ -476,12 +476,6 @@ impl Display for Error {
     }
 }
 
-impl From<Error> for fmt::Error {
-    fn from(_: Error) -> fmt::Error {
-        fmt::Error
-    }
-}
-
 impl From<fmt::Error> for Error {
     fn from(_: fmt::Error) -> Error {
         Error
